@@ -13,6 +13,8 @@ class SpeedTestManager: NSObject, CLLocationManagerDelegate {
     private var internetTest: InternetSpeedTest?
     private var locationManager = CLLocationManager()
 
+    private var completion: ((_ download: Double, _ upload: Double) -> Void)?
+
     override init() {
         super.init()
         if CLLocationManager.locationServicesEnabled() {
@@ -22,16 +24,16 @@ class SpeedTestManager: NSObject, CLLocationManagerDelegate {
             locationManager.requestAlwaysAuthorization()
             locationManager.startUpdatingHeading()
         }
-        self.startTest()
     }
 
-    func startTest() {
+    func startTest(completion: @escaping (_ download: Double, _ upload: Double) -> Void) {
         internetTest = InternetSpeedTest(delegate: self)
         internetTest?.startTest() { error in
             if error != .ok {
                 print(error)
             }
         }
+        self.completion = completion
     }
 }
 
@@ -44,6 +46,9 @@ extension SpeedTestManager: InternetSpeedTestDelegate {
         print(result.downloadSpeed.mbps)
         print(result.uploadSpeed.mbps)
         print(result.latencyInMs)
+        if let completion {
+            completion(result.downloadSpeed.mbps, result.uploadSpeed.mbps)
+        }
     }
 
     func internetTestReceived(servers: [SpeedTestServer]) {

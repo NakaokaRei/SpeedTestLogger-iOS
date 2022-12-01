@@ -10,33 +10,35 @@ import SwiftUI
 import Intents
 
 struct Provider: IntentTimelineProvider {
+
+    let manager = SpeedTestManager()
+
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+        SimpleEntry(date: Date(), download: 0, upload: 0, configuration: ConfigurationIntent())
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+        let entry = SimpleEntry(date: Date(), download: 0, upload: 0, configuration: configuration)
         completion(entry)
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
+        let refresh = Calendar.current.date(byAdding: .minute, value: 5, to: Date()) ?? Date()
 
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
+        manager.startTest() { download, upload in
+            let entry = SimpleEntry(date: Date(), download: download, upload: upload, configuration: configuration)
             entries.append(entry)
+            let timeline = Timeline(entries: entries, policy: .after(refresh))
+            completion(timeline)
         }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
     }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
+    let download: Double
+    let upload: Double
     let configuration: ConfigurationIntent
 }
 
@@ -44,7 +46,10 @@ struct SpeedTestLogger_WidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        VStack {
+            Text("Download: \(entry.download)mbps")
+            Text("Upload: \(entry.upload)mbps")
+        }
     }
 }
 
@@ -63,7 +68,7 @@ struct SpeedTestLogger_Widget: Widget {
 
 struct SpeedTestLogger_Widget_Previews: PreviewProvider {
     static var previews: some View {
-        SpeedTestLogger_WidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        SpeedTestLogger_WidgetEntryView(entry: SimpleEntry(date: Date(), download: 10.0, upload: 20.0, configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

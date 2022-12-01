@@ -547,7 +547,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "SpeedTestLogger-Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocationUsageDescription = "App use Location data";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App use Location data";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,7 +575,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "SpeedTestLogger-Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocationUsageDescription = "App use Location data";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App use Location data";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
