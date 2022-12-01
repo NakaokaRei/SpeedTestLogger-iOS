@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23BDD4042938C986009C150E /* SpeedTestLogger_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDD4032938C986009C150E /* SpeedTestLogger_iOSApp.swift */; };
+		23BDD4062938C986009C150E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDD4052938C986009C150E /* ContentView.swift */; };
+		23BDD4082938C988009C150E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BDD4072938C988009C150E /* Assets.xcassets */; };
+		23BDD40B2938C988009C150E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BDD40A2938C988009C150E /* Preview Assets.xcassets */; };
+		23BDD41C2938CD4C009C150E /* DataCompression.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4132938CD41009C150E /* DataCompression.xcframework */; };
+		23BDD41D2938CD4C009C150E /* DataCompression.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4132938CD41009C150E /* DataCompression.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23BDD41F2938CD4E009C150E /* Socket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4122938CD40009C150E /* Socket.xcframework */; };
+		23BDD4202938CD4E009C150E /* Socket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4122938CD40009C150E /* Socket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23BDD4212938CD4F009C150E /* SpeedcheckerReportSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4152938CD41009C150E /* SpeedcheckerReportSDK.xcframework */; };
+		23BDD4222938CD4F009C150E /* SpeedcheckerReportSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4152938CD41009C150E /* SpeedcheckerReportSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23BDD4232938CD50009C150E /* SpeedcheckerSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4162938CD41009C150E /* SpeedcheckerSDK.xcframework */; };
+		23BDD4242938CD50009C150E /* SpeedcheckerSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4162938CD41009C150E /* SpeedcheckerSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23BDD4252938CD52009C150E /* XMLParsing.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4142938CD41009C150E /* XMLParsing.xcframework */; };
+		23BDD4262938CD52009C150E /* XMLParsing.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4142938CD41009C150E /* XMLParsing.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23BDD41E2938CD4C009C150E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23BDD4262938CD52009C150E /* XMLParsing.xcframework in Embed Frameworks */,
+				23BDD4202938CD4E009C150E /* Socket.xcframework in Embed Frameworks */,
+				23BDD41D2938CD4C009C150E /* DataCompression.xcframework in Embed Frameworks */,
+				23BDD4242938CD50009C150E /* SpeedcheckerSDK.xcframework in Embed Frameworks */,
+				23BDD4222938CD4F009C150E /* SpeedcheckerReportSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		23BDD4002938C986009C150E /* SpeedTestLogger-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpeedTestLogger-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23BDD4032938C986009C150E /* SpeedTestLogger_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestLogger_iOSApp.swift; sourceTree = "<group>"; };
+		23BDD4052938C986009C150E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		23BDD4072938C988009C150E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23BDD40A2938C988009C150E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23BDD4122938CD40009C150E /* Socket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Socket.xcframework; sourceTree = "<group>"; };
+		23BDD4132938CD41009C150E /* DataCompression.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DataCompression.xcframework; sourceTree = "<group>"; };
+		23BDD4142938CD41009C150E /* XMLParsing.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = XMLParsing.xcframework; sourceTree = "<group>"; };
+		23BDD4152938CD41009C150E /* SpeedcheckerReportSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SpeedcheckerReportSDK.xcframework; sourceTree = "<group>"; };
+		23BDD4162938CD41009C150E /* SpeedcheckerSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SpeedcheckerSDK.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23BDD3FD2938C986009C150E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23BDD4252938CD52009C150E /* XMLParsing.xcframework in Frameworks */,
+				23BDD41C2938CD4C009C150E /* DataCompression.xcframework in Frameworks */,
+				23BDD41F2938CD4E009C150E /* Socket.xcframework in Frameworks */,
+				23BDD4232938CD50009C150E /* SpeedcheckerSDK.xcframework in Frameworks */,
+				23BDD4212938CD4F009C150E /* SpeedcheckerReportSDK.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23BDD3F72938C986009C150E = {
+			isa = PBXGroup;
+			children = (
+				23BDD4112938CD28009C150E /* SDK */,
+				23BDD4022938C986009C150E /* SpeedTestLogger-iOS */,
+				23BDD4012938C986009C150E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23BDD4012938C986009C150E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23BDD4002938C986009C150E /* SpeedTestLogger-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23BDD4022938C986009C150E /* SpeedTestLogger-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				23BDD4032938C986009C150E /* SpeedTestLogger_iOSApp.swift */,
+				23BDD4052938C986009C150E /* ContentView.swift */,
+				23BDD4072938C988009C150E /* Assets.xcassets */,
+				23BDD4092938C988009C150E /* Preview Content */,
+			);
+			path = "SpeedTestLogger-iOS";
+			sourceTree = "<group>";
+		};
+		23BDD4092938C988009C150E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23BDD40A2938C988009C150E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23BDD4112938CD28009C150E /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				23BDD4132938CD41009C150E /* DataCompression.xcframework */,
+				23BDD4122938CD40009C150E /* Socket.xcframework */,
+				23BDD4152938CD41009C150E /* SpeedcheckerReportSDK.xcframework */,
+				23BDD4162938CD41009C150E /* SpeedcheckerSDK.xcframework */,
+				23BDD4142938CD41009C150E /* XMLParsing.xcframework */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23BDD3FF2938C986009C150E /* SpeedTestLogger-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23BDD40E2938C988009C150E /* Build configuration list for PBXNativeTarget "SpeedTestLogger-iOS" */;
+			buildPhases = (
+				23BDD3FC2938C986009C150E /* Sources */,
+				23BDD3FD2938C986009C150E /* Frameworks */,
+				23BDD3FE2938C986009C150E /* Resources */,
+				23BDD41E2938CD4C009C150E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpeedTestLogger-iOS";
+			productName = "SpeedTestLogger-iOS";
+			productReference = 23BDD4002938C986009C150E /* SpeedTestLogger-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23BDD3F82938C986009C150E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					23BDD3FF2938C986009C150E = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 23BDD3FB2938C986009C150E /* Build configuration list for PBXProject "SpeedTestLogger-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23BDD3F72938C986009C150E;
+			productRefGroup = 23BDD4012938C986009C150E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23BDD3FF2938C986009C150E /* SpeedTestLogger-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23BDD3FE2938C986009C150E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23BDD40B2938C988009C150E /* Preview Assets.xcassets in Resources */,
+				23BDD4082938C988009C150E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23BDD3FC2938C986009C150E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23BDD4062938C986009C150E /* ContentView.swift in Sources */,
+				23BDD4042938C986009C150E /* SpeedTestLogger_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		23BDD40C2938C988009C150E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23BDD40D2938C988009C150E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23BDD40F2938C988009C150E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeedTestLogger-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = YX6B69FS7M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.n.rei.SpeedTestLogger-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23BDD4102938C988009C150E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeedTestLogger-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = YX6B69FS7M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.n.rei.SpeedTestLogger-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23BDD3FB2938C986009C150E /* Build configuration list for PBXProject "SpeedTestLogger-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23BDD40C2938C988009C150E /* Debug */,
+				23BDD40D2938C988009C150E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23BDD40E2938C988009C150E /* Build configuration list for PBXNativeTarget "SpeedTestLogger-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23BDD40F2938C988009C150E /* Debug */,
+				23BDD4102938C988009C150E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23BDD3F82938C986009C150E /* Project object */;
+}
