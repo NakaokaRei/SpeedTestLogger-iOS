@@ -24,7 +24,7 @@ struct Provider: IntentTimelineProvider {
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
-        let refresh = Calendar.current.date(byAdding: .minute, value: 5, to: Date()) ?? Date()
+        let refresh = Calendar.current.date(byAdding: .minute, value: 15, to: Date()) ?? Date()
 
         manager.startTest() { download, upload in
             let entry = SimpleEntry(date: Date(), download: download, upload: upload, configuration: configuration)
