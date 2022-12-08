@@ -48,7 +48,7 @@ struct SpeedTestLogger_WidgetEntryView : View {
     var body: some View {
         VStack {
             Text("Down:" + String(format: "%.1f", entry.download) + "mbps")
-            Text("Up:" + String(format: "%.1f", entry.download) + "mbps")
+            Text("Up:" + String(format: "%.1f", entry.upload) + "mbps")
         }
     }
 }
