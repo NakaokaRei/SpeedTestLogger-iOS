@@ -47,8 +47,8 @@ struct SpeedTestLogger_WidgetEntryView : View {
 
     var body: some View {
         VStack {
-            Text("Download: \(entry.download)mbps")
-            Text("Upload: \(entry.upload)mbps")
+            Text("Down:" + String(format: "%.1f", entry.download) + "mbps")
+            Text("Up:" + String(format: "%.1f", entry.download) + "mbps")
         }
     }
 }
@@ -63,6 +63,11 @@ struct SpeedTestLogger_Widget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([
+            .accessoryInline,
+            .accessoryCircular,
+            .accessoryRectangular
+        ])
     }
 }
 
