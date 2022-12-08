@@ -66,7 +66,9 @@ struct SpeedTestLogger_Widget: Widget {
         .supportedFamilies([
             .accessoryInline,
             .accessoryCircular,
-            .accessoryRectangular
+            .accessoryRectangular,
+            .systemMedium,
+            .systemSmall
         ])
     }
 }
