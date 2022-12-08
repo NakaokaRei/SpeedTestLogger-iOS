@@ -14,16 +14,22 @@ class SpeedTestViewConfig: ObservableObject {
     @Published var downloadMbps: Double = 0
     @Published var uploadMbps: Double = 0
     @Published var latestDate: Date = Date()
-    @Published var isRegularly: Bool = false
 
     let speedTestManager = SpeedTestManager()
+    var timer: Timer?
 
     init() {
+        self.timer = Timer.scheduledTimer(
+            timeInterval: 60 * 5,
+            target: self,
+            selector: #selector(self.startTest),
+            userInfo: nil,
+            repeats: true
+        )
         speedTestManager.delegate = self
-        startTest()
     }
 
-    func startTest() {
+    @objc func startTest() {
         downloadMbps = 0
         uploadMbps = 0
         speedTestManager.startTest { downloadMbps, uploadMbps in

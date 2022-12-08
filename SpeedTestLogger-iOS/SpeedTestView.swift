@@ -21,14 +21,6 @@ struct SpeedTestView: View {
             } label: {
                 Text("Start")
             }
-            .disabled(config.isRegularly)
-            Toggle(isOn: $config.isRegularly) {
-                HStack {
-                    Text("定期的に計測する")
-                    Text(config.isRegularly ? "ON" : "OFF")
-                }
-            }
-            .toggleStyle(.button)
         }
     }
 }
