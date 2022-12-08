@@ -40,6 +40,8 @@
 		23BDD47E2938DB80009C150E /* SpeedcheckerSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4572938D917009C150E /* SpeedcheckerSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23BDD47F2938DB80009C150E /* XMLParsing.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4542938D917009C150E /* XMLParsing.xcframework */; };
 		23BDD4802938DB80009C150E /* XMLParsing.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4542938D917009C150E /* XMLParsing.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5CF6BC01294206430046CBE5 /* SpeedTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6BC00294206430046CBE5 /* SpeedTestView.swift */; };
+		5CF6BC03294206590046CBE5 /* SpeedTestViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6BC02294206590046CBE5 /* SpeedTestViewConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		23BDD4562938D917009C150E /* Socket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Socket.xcframework; sourceTree = "<group>"; };
 		23BDD4572938D917009C150E /* SpeedcheckerSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SpeedcheckerSDK.xcframework; sourceTree = "<group>"; };
 		23BDD4582938D918009C150E /* DataCompression.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DataCompression.xcframework; sourceTree = "<group>"; };
+		5CF6BC00294206430046CBE5 /* SpeedTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestView.swift; sourceTree = "<group>"; };
+		5CF6BC02294206590046CBE5 /* SpeedTestViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestViewConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 				23BDD4052938C986009C150E /* ContentView.swift */,
 				23BDD4072938C988009C150E /* Assets.xcassets */,
 				23BDD4092938C988009C150E /* Preview Content */,
+				5CF6BC00294206430046CBE5 /* SpeedTestView.swift */,
+				5CF6BC02294206590046CBE5 /* SpeedTestViewConfig.swift */,
 			);
 			path = "SpeedTestLogger-iOS";
 			sourceTree = "<group>";
@@ -332,7 +338,9 @@
 			files = (
 				23BDD43B2938CEBF009C150E /* SpeedTestLogger_Widget.intentdefinition in Sources */,
 				23BDD4522938D393009C150E /* SpeedTestManager.swift in Sources */,
+				5CF6BC03294206590046CBE5 /* SpeedTestViewConfig.swift in Sources */,
 				23BDD4062938C986009C150E /* ContentView.swift in Sources */,
+				5CF6BC01294206430046CBE5 /* SpeedTestView.swift in Sources */,
 				23BDD4042938C986009C150E /* SpeedTestLogger_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

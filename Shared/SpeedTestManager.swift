@@ -8,21 +8,29 @@
 import SpeedcheckerSDK
 import CoreLocation
 
+protocol SpeedTestDelegate {
+    func progressDonwload(downloadMbps: Double)
+    func progressUpload(uploadMbps: Double)
+}
+
 class SpeedTestManager: NSObject, CLLocationManagerDelegate {
 
     private var internetTest: InternetSpeedTest?
     private var locationManager = CLLocationManager()
 
     private var completion: ((_ download: Double, _ upload: Double) -> Void)?
+    var delegate: SpeedTestDelegate? = nil
 
     override init() {
         super.init()
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-            locationManager.requestWhenInUseAuthorization()
-            locationManager.requestAlwaysAuthorization()
-            locationManager.startUpdatingHeading()
+        Task {
+            if CLLocationManager.locationServicesEnabled() {
+                locationManager.delegate = self
+                locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+                locationManager.requestWhenInUseAuthorization()
+                locationManager.requestAlwaysAuthorization()
+                locationManager.startUpdatingHeading()
+            }
         }
     }
 
@@ -51,36 +59,28 @@ extension SpeedTestManager: InternetSpeedTestDelegate {
         }
     }
 
-    func internetTestReceived(servers: [SpeedTestServer]) {
-        //
-    }
+    func internetTestReceived(servers: [SpeedTestServer]) {}
 
     func internetTestSelected(server: SpeedTestServer, latency: Int, jitter: Int) {
         print("Latency: \(latency)")
         print("Jitter: \(jitter)")
     }
 
-    func internetTestDownloadStart() {
-        //
-    }
+    func internetTestDownloadStart() {}
 
-    func internetTestDownloadFinish() {
-        //
-    }
+    func internetTestDownloadFinish() {}
 
     func internetTestDownload(progress: Double, speed: SpeedTestSpeed) {
         print("Download: \(speed.descriptionInMbps)")
+        delegate?.progressDonwload(downloadMbps: speed.mbps)
     }
 
-    func internetTestUploadStart() {
-        //
-    }
+    func internetTestUploadStart() {}
 
-    func internetTestUploadFinish() {
-        //
-    }
+    func internetTestUploadFinish() {}
 
     func internetTestUpload(progress: Double, speed: SpeedTestSpeed) {
         print("Upload: \(speed.descriptionInMbps)")
+        delegate?.progressUpload(uploadMbps: speed.mbps)
     }
 }
