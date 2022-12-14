@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "speedchecker-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:NakaokaRei/speedchecker-sdk-ios.git",
+      "state" : {
+        "branch" : "feat/support-swiftpm",
+        "revision" : "a5f101d73e6ff52ca0cda8a6e656f9c4b0439f62"
+      }
+    }
+  ],
+  "version" : 2
+}

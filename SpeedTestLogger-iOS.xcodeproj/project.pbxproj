@@ -20,26 +20,7 @@
 		23BDD43E2938CEBF009C150E /* SpeedTestLogger-WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 23BDD42D2938CEBE009C150E /* SpeedTestLogger-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		23BDD4522938D393009C150E /* SpeedTestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDD4512938D393009C150E /* SpeedTestManager.swift */; };
 		23BDD4532938D393009C150E /* SpeedTestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDD4512938D393009C150E /* SpeedTestManager.swift */; };
-		23BDD4632938D921009C150E /* DataCompression.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4582938D918009C150E /* DataCompression.xcframework */; };
-		23BDD4642938D921009C150E /* DataCompression.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4582938D918009C150E /* DataCompression.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23BDD4652938D922009C150E /* Socket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4562938D917009C150E /* Socket.xcframework */; };
-		23BDD4662938D922009C150E /* Socket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4562938D917009C150E /* Socket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23BDD4672938D924009C150E /* SpeedcheckerReportSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4552938D917009C150E /* SpeedcheckerReportSDK.xcframework */; };
-		23BDD4682938D924009C150E /* SpeedcheckerReportSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4552938D917009C150E /* SpeedcheckerReportSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23BDD4692938D926009C150E /* SpeedcheckerSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4572938D917009C150E /* SpeedcheckerSDK.xcframework */; };
-		23BDD46A2938D926009C150E /* SpeedcheckerSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4572938D917009C150E /* SpeedcheckerSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23BDD46B2938D928009C150E /* XMLParsing.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4542938D917009C150E /* XMLParsing.xcframework */; };
-		23BDD46C2938D928009C150E /* XMLParsing.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4542938D917009C150E /* XMLParsing.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23BDD4772938DB80009C150E /* DataCompression.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4582938D918009C150E /* DataCompression.xcframework */; };
-		23BDD4782938DB80009C150E /* DataCompression.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4582938D918009C150E /* DataCompression.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23BDD4792938DB80009C150E /* Socket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4562938D917009C150E /* Socket.xcframework */; };
-		23BDD47A2938DB80009C150E /* Socket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4562938D917009C150E /* Socket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23BDD47B2938DB80009C150E /* SpeedcheckerReportSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4552938D917009C150E /* SpeedcheckerReportSDK.xcframework */; };
-		23BDD47C2938DB80009C150E /* SpeedcheckerReportSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4552938D917009C150E /* SpeedcheckerReportSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23BDD47D2938DB80009C150E /* SpeedcheckerSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4572938D917009C150E /* SpeedcheckerSDK.xcframework */; };
-		23BDD47E2938DB80009C150E /* SpeedcheckerSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4572938D917009C150E /* SpeedcheckerSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23BDD47F2938DB80009C150E /* XMLParsing.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4542938D917009C150E /* XMLParsing.xcframework */; };
-		23BDD4802938DB80009C150E /* XMLParsing.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BDD4542938D917009C150E /* XMLParsing.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23BFD734294A31540069196A /* SpeedcheckerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 23BFD733294A31540069196A /* SpeedcheckerSDK */; };
 		5CF6BC01294206430046CBE5 /* SpeedTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6BC00294206430046CBE5 /* SpeedTestView.swift */; };
 		5CF6BC03294206590046CBE5 /* SpeedTestViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6BC02294206590046CBE5 /* SpeedTestViewConfig.swift */; };
 /* End PBXBuildFile section */
@@ -61,11 +42,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23BDD46C2938D928009C150E /* XMLParsing.xcframework in Embed Frameworks */,
-				23BDD4662938D922009C150E /* Socket.xcframework in Embed Frameworks */,
-				23BDD4642938D921009C150E /* DataCompression.xcframework in Embed Frameworks */,
-				23BDD46A2938D926009C150E /* SpeedcheckerSDK.xcframework in Embed Frameworks */,
-				23BDD4682938D924009C150E /* SpeedcheckerReportSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,11 +63,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23BDD4802938DB80009C150E /* XMLParsing.xcframework in Embed Frameworks */,
-				23BDD47A2938DB80009C150E /* Socket.xcframework in Embed Frameworks */,
-				23BDD4782938DB80009C150E /* DataCompression.xcframework in Embed Frameworks */,
-				23BDD47E2938DB80009C150E /* SpeedcheckerSDK.xcframework in Embed Frameworks */,
-				23BDD47C2938DB80009C150E /* SpeedcheckerReportSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,11 +83,6 @@
 		23BDD4372938CEBF009C150E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23BDD4392938CEBF009C150E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23BDD4512938D393009C150E /* SpeedTestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestManager.swift; sourceTree = "<group>"; };
-		23BDD4542938D917009C150E /* XMLParsing.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = XMLParsing.xcframework; sourceTree = "<group>"; };
-		23BDD4552938D917009C150E /* SpeedcheckerReportSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SpeedcheckerReportSDK.xcframework; sourceTree = "<group>"; };
-		23BDD4562938D917009C150E /* Socket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Socket.xcframework; sourceTree = "<group>"; };
-		23BDD4572938D917009C150E /* SpeedcheckerSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SpeedcheckerSDK.xcframework; sourceTree = "<group>"; };
-		23BDD4582938D918009C150E /* DataCompression.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DataCompression.xcframework; sourceTree = "<group>"; };
 		5CF6BC00294206430046CBE5 /* SpeedTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestView.swift; sourceTree = "<group>"; };
 		5CF6BC02294206590046CBE5 /* SpeedTestViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestViewConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,11 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23BDD46B2938D928009C150E /* XMLParsing.xcframework in Frameworks */,
-				23BDD4632938D921009C150E /* DataCompression.xcframework in Frameworks */,
-				23BDD4652938D922009C150E /* Socket.xcframework in Frameworks */,
-				23BDD4692938D926009C150E /* SpeedcheckerSDK.xcframework in Frameworks */,
-				23BDD4672938D924009C150E /* SpeedcheckerReportSDK.xcframework in Frameworks */,
+				23BFD734294A31540069196A /* SpeedcheckerSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,11 +101,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				23BDD4322938CEBE009C150E /* SwiftUI.framework in Frameworks */,
-				23BDD4772938DB80009C150E /* DataCompression.xcframework in Frameworks */,
-				23BDD47D2938DB80009C150E /* SpeedcheckerSDK.xcframework in Frameworks */,
-				23BDD47F2938DB80009C150E /* XMLParsing.xcframework in Frameworks */,
-				23BDD4792938DB80009C150E /* Socket.xcframework in Frameworks */,
-				23BDD47B2938DB80009C150E /* SpeedcheckerReportSDK.xcframework in Frameworks */,
 				23BDD4302938CEBE009C150E /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				23BDD4502938D376009C150E /* Shared */,
-				23BDD4112938CD28009C150E /* SDK */,
 				23BDD4022938C986009C150E /* SpeedTestLogger-iOS */,
 				23BDD4332938CEBE009C150E /* SpeedTestLogger-Widget */,
 				23BDD42E2938CEBE009C150E /* Frameworks */,
@@ -191,18 +147,6 @@
 				23BDD40A2938C988009C150E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		23BDD4112938CD28009C150E /* SDK */ = {
-			isa = PBXGroup;
-			children = (
-				23BDD4582938D918009C150E /* DataCompression.xcframework */,
-				23BDD4562938D917009C150E /* Socket.xcframework */,
-				23BDD4552938D917009C150E /* SpeedcheckerReportSDK.xcframework */,
-				23BDD4572938D917009C150E /* SpeedcheckerSDK.xcframework */,
-				23BDD4542938D917009C150E /* XMLParsing.xcframework */,
-			);
-			path = SDK;
 			sourceTree = "<group>";
 		};
 		23BDD42E2938CEBE009C150E /* Frameworks */ = {
@@ -252,6 +196,9 @@
 				23BDD43D2938CEBF009C150E /* PBXTargetDependency */,
 			);
 			name = "SpeedTestLogger-iOS";
+			packageProductDependencies = (
+				23BFD733294A31540069196A /* SpeedcheckerSDK */,
+			);
 			productName = "SpeedTestLogger-iOS";
 			productReference = 23BDD4002938C986009C150E /* SpeedTestLogger-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -301,6 +248,9 @@
 				Base,
 			);
 			mainGroup = 23BDD3F72938C986009C150E;
+			packageReferences = (
+				23BFD732294A31540069196A /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */,
+			);
 			productRefGroup = 23BDD4012938C986009C150E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -629,6 +579,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23BFD732294A31540069196A /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:NakaokaRei/speedchecker-sdk-ios.git";
+			requirement = {
+				branch = "feat/support-swiftpm";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23BFD733294A31540069196A /* SpeedcheckerSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23BFD732294A31540069196A /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */;
+			productName = SpeedcheckerSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 23BDD3F82938C986009C150E /* Project object */;
 }
