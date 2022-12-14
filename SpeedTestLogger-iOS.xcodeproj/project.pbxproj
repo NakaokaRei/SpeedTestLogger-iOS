@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23186535294A3B4600694CCC /* SpeedcheckerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 23186534294A3B4600694CCC /* SpeedcheckerSDK */; };
 		23BDD4042938C986009C150E /* SpeedTestLogger_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDD4032938C986009C150E /* SpeedTestLogger_iOSApp.swift */; };
 		23BDD4062938C986009C150E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDD4052938C986009C150E /* ContentView.swift */; };
 		23BDD4082938C988009C150E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BDD4072938C988009C150E /* Assets.xcassets */; };
@@ -21,6 +20,7 @@
 		23BDD43E2938CEBF009C150E /* SpeedTestLogger-WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 23BDD42D2938CEBE009C150E /* SpeedTestLogger-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		23BDD4522938D393009C150E /* SpeedTestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDD4512938D393009C150E /* SpeedTestManager.swift */; };
 		23BDD4532938D393009C150E /* SpeedTestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDD4512938D393009C150E /* SpeedTestManager.swift */; };
+		23C070CD294A3F50004E9128 /* SpeedcheckerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 23C070CC294A3F50004E9128 /* SpeedcheckerSDK */; };
 		5CF6BC01294206430046CBE5 /* SpeedTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6BC00294206430046CBE5 /* SpeedTestView.swift */; };
 		5CF6BC03294206590046CBE5 /* SpeedTestViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6BC02294206590046CBE5 /* SpeedTestViewConfig.swift */; };
 /* End PBXBuildFile section */
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23186535294A3B4600694CCC /* SpeedcheckerSDK in Frameworks */,
+				23C070CD294A3F50004E9128 /* SpeedcheckerSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +197,7 @@
 			);
 			name = "SpeedTestLogger-iOS";
 			packageProductDependencies = (
-				23186534294A3B4600694CCC /* SpeedcheckerSDK */,
+				23C070CC294A3F50004E9128 /* SpeedcheckerSDK */,
 			);
 			productName = "SpeedTestLogger-iOS";
 			productReference = 23BDD4002938C986009C150E /* SpeedTestLogger-iOS.app */;
@@ -249,7 +249,7 @@
 			);
 			mainGroup = 23BDD3F72938C986009C150E;
 			packageReferences = (
-				23186533294A3B4600694CCC /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */,
+				23C070CB294A3F50004E9128 /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */,
 			);
 			productRefGroup = 23BDD4012938C986009C150E /* Products */;
 			projectDirPath = "";
@@ -581,20 +581,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		23186533294A3B4600694CCC /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */ = {
+		23C070CB294A3F50004E9128 /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:NakaokaRei/speedchecker-sdk-ios.git";
 			requirement = {
 				kind = revision;
-				revision = b388cdb285560966bb167cb23b8af3934545d698;
+				revision = 5f0e6c94a6278ec808bb88b2247c8d015c98a96c;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		23186534294A3B4600694CCC /* SpeedcheckerSDK */ = {
+		23C070CC294A3F50004E9128 /* SpeedcheckerSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 23186533294A3B4600694CCC /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */;
+			package = 23C070CB294A3F50004E9128 /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */;
 			productName = SpeedcheckerSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

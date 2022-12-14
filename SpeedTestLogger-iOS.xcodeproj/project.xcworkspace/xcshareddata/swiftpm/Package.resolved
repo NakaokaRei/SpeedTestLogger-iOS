@@ -5,7 +5,7 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:NakaokaRei/speedchecker-sdk-ios.git",
       "state" : {
-        "revision" : "b388cdb285560966bb167cb23b8af3934545d698"
+        "revision" : "5f0e6c94a6278ec808bb88b2247c8d015c98a96c"
       }
     }
   ],
