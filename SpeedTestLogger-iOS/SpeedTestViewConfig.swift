@@ -37,8 +37,35 @@ class SpeedTestViewConfig: ObservableObject {
                 self.latestDate = Date()
                 self.downloadMbps = downloadMbps
                 self.uploadMbps = uploadMbps
+                try await self.post(
+                    time: self.formattedDate(date: self.latestDate),
+                    uploadSpeed: String(uploadMbps),
+                    downloadSpeed: String(downloadMbps)
+                )
             }
         }
+    }
+
+    private func post(time: String, uploadSpeed: String, downloadSpeed: String) async throws{
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+
+        let encoder = JSONEncoder()
+        request.httpBody = try encoder.encode(
+            PostBody(
+                time: time,
+                uploadSpeed: uploadSpeed,
+                downloadSpeed: downloadSpeed
+            )
+        )
+
+        let _ = try await URLSession.shared.data(for: request)
+    }
+
+    private func formattedDate(date: Date) -> String {
+        let fomatter = DateFormatter()
+        fomatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+        return fomatter.string(from: date)
     }
 }
 

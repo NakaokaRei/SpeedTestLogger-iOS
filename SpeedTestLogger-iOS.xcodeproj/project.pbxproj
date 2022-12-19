@@ -21,6 +21,7 @@
 		23BDD4522938D393009C150E /* SpeedTestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDD4512938D393009C150E /* SpeedTestManager.swift */; };
 		23BDD4532938D393009C150E /* SpeedTestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDD4512938D393009C150E /* SpeedTestManager.swift */; };
 		23C070CD294A3F50004E9128 /* SpeedcheckerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 23C070CC294A3F50004E9128 /* SpeedcheckerSDK */; };
+		23EA9FD02950851200774086 /* PostBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA9FCF2950851200774086 /* PostBody.swift */; };
 		5CF6BC01294206430046CBE5 /* SpeedTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6BC00294206430046CBE5 /* SpeedTestView.swift */; };
 		5CF6BC03294206590046CBE5 /* SpeedTestViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6BC02294206590046CBE5 /* SpeedTestViewConfig.swift */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		23BDD4372938CEBF009C150E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23BDD4392938CEBF009C150E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23BDD4512938D393009C150E /* SpeedTestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestManager.swift; sourceTree = "<group>"; };
+		23EA9FCF2950851200774086 /* PostBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBody.swift; sourceTree = "<group>"; };
 		5CF6BC00294206430046CBE5 /* SpeedTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestView.swift; sourceTree = "<group>"; };
 		5CF6BC02294206590046CBE5 /* SpeedTestViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestViewConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 				23BDD4092938C988009C150E /* Preview Content */,
 				5CF6BC00294206430046CBE5 /* SpeedTestView.swift */,
 				5CF6BC02294206590046CBE5 /* SpeedTestViewConfig.swift */,
+				23EA9FCF2950851200774086 /* PostBody.swift */,
 			);
 			path = "SpeedTestLogger-iOS";
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				23BDD43B2938CEBF009C150E /* SpeedTestLogger_Widget.intentdefinition in Sources */,
 				23BDD4522938D393009C150E /* SpeedTestManager.swift in Sources */,
 				5CF6BC03294206590046CBE5 /* SpeedTestViewConfig.swift in Sources */,
+				23EA9FD02950851200774086 /* PostBody.swift in Sources */,
 				23BDD4062938C986009C150E /* ContentView.swift in Sources */,
 				5CF6BC01294206430046CBE5 /* SpeedTestView.swift in Sources */,
 				23BDD4042938C986009C150E /* SpeedTestLogger_iOSApp.swift in Sources */,
