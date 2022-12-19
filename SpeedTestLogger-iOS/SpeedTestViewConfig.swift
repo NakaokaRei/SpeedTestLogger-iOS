@@ -47,6 +47,7 @@ class SpeedTestViewConfig: ObservableObject {
     }
 
     private func post(time: String, uploadSpeed: String, downloadSpeed: String) async throws{
+        let url = URL(string: "add api url")
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
 
